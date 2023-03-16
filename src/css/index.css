@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Mandali&family=Climate+Crisis&family=Anton&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap');
+
+body {margin: 0;
+  font-family: 'Mandali', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BioRhyme', sans-serif;
+}
+
+span.blast {
+  user-select: none;
+  position: relative;
+  display: inline-block;
+  font-size: 18pt;
+  letter-spacing: 0.5rem;
+}
+
+span.blast:hover {
+  animation: blast;
+  animation-duration: 400ms;
+}
+
+@keyframes blast {
+  0%   { font-size:18pt; letter-spacing: 0.5rem; font-weight: 400; top: -0.1rem; left: 0; color: yellowgreen; }
+  25%  { font-size:20pt; letter-spacing: 0.2rem; font-weight: 700; top: -0.2rem; left: -0.1rem; color: green; }
+  50%  { font-size:24pt; letter-spacing: 0.1rem; font-weight: 800; top: 0.2rem; left: -0.2rem; color: green; }
+  75%  { font-size:20pt; letter-spacing: 0.2rem; font-weight: 700; top: 0.1rem; left: -0.1rem; color: yellowgreen; }
+  100% { font-size:18pt; letter-spacing: 0.5rem; font-weight: 400; top: 0; left: 0; color: white; }
+}
+
+li.nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left-color: transparent;
+  border-left-style: inset;
+  border-right-color: transparent;
+  border-right-style: inset;
+}
+
+li.nav-item:hover {
+  border-left-color: yellowgreen;
+  border-right-color: green;
+  background-color: darkgreen;
+}
+
+a.nav-link {
+  width: fit-content;
+  font-family: 'Play', sans-serif;
+}
+
+a.nav-link:hover {
+  color: yellowgreen!important;
+  font-weight: bold;
+  transform: rotateZ(-4deg) skewX(-4deg) scaleX(1.22);
+  transition: transform 200ms ease-out, color 200ms linear, font-weight 200ms linear;
+}
+
+.b-shadow-success {
+  box-shadow: 0 -4rem 6rem 2rem green;
+  -webkit-box-shadow: 0 -4rem 6rem 2rem green;
+  -moz-box-shadow: 0 -4rem 6rem 2rem green;
+}
+
+.b-shadow-warning {
+  box-shadow: 0 -2rem 6rem -2rem orange;
+  -webkit-box-shadow: 0 -2rem 6rem -2rem orange;
+  -moz-box-shadow: 0 -2rem 6rem -2rem orange;
+
+}
+
+.t-shadow-success {
+  color: rgb(255, 255, 255);
+  text-shadow:
+    0.25rem 0.25rem 0.25rem rgba(0, 128, 0, 0.5),
+    0 0 0.75rem rgba(0, 0, 0, 0.75),
+    -0.125rem -0.125rem 0.25rem rgba(255, 166, 0, 0.5);
+}

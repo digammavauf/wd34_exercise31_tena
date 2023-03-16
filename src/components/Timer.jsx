@@ -1,0 +1,15 @@
+import {useState, useEffect} from 'react';
+
+const Timer = () => {
+    const [time, timeValue] = useState(60);
+    useEffect(()=>{
+        setTimeout(()=>{
+            timeValue(()=>time-1);
+        }, 1000);
+    });
+    return (
+        <h1>{time}</h1>
+    );
+}
+ 
+export default Timer;
